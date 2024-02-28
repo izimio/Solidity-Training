@@ -9,13 +9,6 @@ Install foundry
 ```
 curl -L https://foundry.paradigm.xyz | bash
 ```
-
-Clone this repository
-
-```
-git clone https://github.com/rareSkills/solidity-exercises.git
-```
-
 Complete the exercises in order and test with
 
 ```
@@ -36,3 +29,71 @@ Save your changes, then, in the same directory, test it with
 ```
 forge test -vvv
 ```
+
+--------------------------------------------
+
+# Completed Exercises
+
+
+
+| Exercise             | Status |
+|----------------------|--------|
+| AccessModifiers      | ✅     |
+| Add                  | ✅     |
+| BasicBank            | ✅     |
+| BasicBankV2          | ✅     |
+| BasicStorage         | ✅     |
+| BlockNumber          | ✅     |
+| CodeSize             | ✅     |
+| CrossContract        | ❌     |
+| Decoder              | ❌     |
+| DeployContract       | ❌     |
+| Deployer             | ❌     |
+| Distribute           | ❌     |
+| DistributeV2         | ❌     |
+| Donations            | ❌     |
+| Emitter              | ❌     |
+| Encoder              | ❌     |
+| Enum                 | ❌     |
+| EverythingWorks      | ❌     |
+| Exponent             | ❌     |
+| FilterOddNumbers     | ❌     |
+| FizzBuzz             | ❌     |
+| Fibonacci            | ❌     |
+| IfStatement          | ❌     |
+| IdiotBetting         | ❌     |
+| Immutable            | ❌     |
+| InheritanceOverride  | ❌     |
+| InsertInArray        | ❌     |
+| IsPrime              | ❌     |
+| IsSorted             | ❌     |
+| Keccak               | ❌     |
+| ListOfNumbers        | ❌     |
+| Mean                 | ❌     |
+| MultiInheritance     | ❌     |
+| NestedArray          | ❌     |
+| NestedMapping        | ❌     |
+| NotEnough            | ❌     |
+| OneWeekLockup        | ❌     |
+| OriginVsSender       | ❌     |
+| Owner                | ❌     |
+| PriceIsRight         | ❌     |
+| PublicFunction       | ❌     |
+| PublicVariable       | ❌     |
+| PureVsView           | ❌     |
+| Receive              | ❌     |
+| ReducingPayout       | ❌     |
+| SelfDestroyer        | ❌     |
+| SpecialNumbers       | ❌     |
+| Stack                | ❌     |
+| StudentDB            | ❌     |
+| SumArray             | ❌     |
+| Super                | ❌     |
+| TicTacToe            | ❌     |
+| TimelockEscrow       | ❌     |
+| TripleNestedMapping  | ❌     |
+| Tupledore            | ❌     |
+| Typecast             | ❌     |
+| Unchecked            | ❌     |
+| Withdraw             | ❌     |
+| WhoCalledMe          | ✅     |

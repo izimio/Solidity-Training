@@ -9,9 +9,14 @@ contract BlockNumber {
      * To pass the test, it needs a storage variable that stores the last blocknumber where it was accessed.
      */
 
+    uint256 public lastBlockNumber;
     address public lastCaller;
 
     function callMe() external {
-        /// your code here
+        if (lastBlockNumber == block.number) {
+            revert("Only once per block");
+        }
+        lastBlockNumber = block.number;
+        lastCaller = msg.sender;
     }
 }
