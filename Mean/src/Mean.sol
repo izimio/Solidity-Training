@@ -6,6 +6,11 @@ contract Mean {
      * The goal of this exercise is to return the mean of the numbers in "arr"
      */
     function mean(uint256[] calldata arr) public view returns (uint256) {
-        // your code here
+        uint256 len = arr.length;
+        uint256 sum = 0;
+        for(uint256 i = 0 ; i  < len ; i++) {
+            sum += arr[i];
+        }
+        return sum / len;
     }
 }
