@@ -2,10 +2,6 @@
 pragma solidity ^0.8.13;
 
 contract ExampleEnum {
-    /*
-        This exercise assumes you understand how Enum works.
-        1. The `isWeekend` function returns a bool when called.
-    */
 
     enum DayOfWeek {
         Monday,
@@ -18,6 +14,6 @@ contract ExampleEnum {
     }
 
     function isWeekend(uint256 index) public pure returns (bool) {
-        // your code here
+        return index >= 5;
     }
 }

@@ -15,6 +15,20 @@ contract FilterOddNumbers {
         view
         returns (uint256[] memory)
     {
-        // your code here
+        uint256 aLen = _arr.length;
+        uint256[] memory tmpArr = new uint256[](aLen);
+        uint256 len = 0;
+    
+        for(uint256 i = 0; i < aLen ; i++) {
+            if(_arr[i] % 2 == 0) {
+                tmpArr[len++] = _arr[i];
+            }
+        }
+        uint256[] memory _newArr = new uint256[](len);
+    
+        for(uint256 i = 0; i < len; i++) {
+            _newArr[i] = tmpArr[i];
+        }
+        return _newArr;
     }
 }

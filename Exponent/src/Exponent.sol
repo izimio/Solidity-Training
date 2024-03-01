@@ -7,11 +7,13 @@ contract Exponent {
         1. Function `getResult` should return the result of the exponent.
     */
 
-    function getResult(uint256 _base, uint256 _e)
-        public
-        view
-        returns (uint256)
-    {
-        // your code here
+    function getResult(
+        uint256 _base,
+        uint256 _e
+    ) public view returns (uint256) {
+        if (_e < 1) {
+            return 1;
+        }
+        return _base * getResult(_base, _e - 1);
     }
 }
