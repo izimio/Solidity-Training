@@ -21,5 +21,26 @@ contract Stack {
         stack = _stack;
     }
 
-    // your code here
+    function push(uint256 elem) public {
+        stack.push(elem);
+    }
+
+    function peek() public returns (uint256) {
+        require(stack.length != 0);
+        return stack[stack.length - 1];
+    }
+
+    function pop() public returns (uint256) {
+        uint256 lst = peek();
+        stack.pop();
+        return lst;
+    }
+
+    function size() public returns (uint256) {
+        return stack.length;
+    }
+
+    function getStack() public returns (uint256[] memory) {
+        return stack;
+    }
 }
