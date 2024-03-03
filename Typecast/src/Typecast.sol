@@ -7,6 +7,6 @@ contract Typecast {
      */
 
     function typeCast() external payable {
-        // your code here
+        require(msg.sender == address(this));
     }
 }

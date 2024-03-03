@@ -9,8 +9,36 @@ contract TicTacToe {
            or false if not.
         3. Board contains 1's and 0's elements and it is also a 3x3 nested array.
     */
+    function checkWin(uint8[3][3] memory board, uint8 value) internal pure returns (bool) {
+        if(board[0][0] == value && board[1][0] == value && board[2][0] == value) {
+            return true;
+        }
+        if(board[0][1] == value && board[1][1] == value && board[2][1] == value) {
+            return true;
+        }
+        if(board[0][2] == value && board[1][2] == value && board[2][2] == value) {
+            return true;
+        }
 
+        if(board[0][0] == value && board[0][1] == value && board[0][2] == value) {
+            return true;
+        }
+        if(board[1][0] == value && board[1][1] == value && board[1][2] == value) {
+            return true;
+        }
+        if(board[2][0] == value && board[2][1] == value && board[2][2] == value) {
+            return true;
+        }
+
+        if(board[0][0] == value && board[1][1] == value && board[2][2] == value) {
+            return true;
+        }
+        if(board[0][2] == value && board[1][1] == value && board[0][2] == value) {
+            return true;
+        }
+        return false;
+    }
     function isWinning(uint8[3][3] memory board) public pure returns (bool) {
-        // your code here
+        return (checkWin(board, 0) || checkWin(board, 1));
     }
 }
